@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Web Design</title>
+</head>
+
+<body class="blue lighten-4">
+    <nav class="row grey lighten-3">
+<p class="blue-text right-align"><b> Gallery</b></p>
+    </nav>
+<!--Task8 Activity-->
+    <!--Material Box-->
+    <div class="container">
+        <h3 class="red-txt center"><b>Media (Material-Box)</b></h3>
+            <div class="row">
+                    <div class="col s12 m4 hide-on-large-only">
+                        <img src="image/summer1.jpg" data-caption="Summer" alt="summer1" class="responsive-img materialboxed"/>
+                    </div>
+                    <div class="col s12 m4 hide-on-large-only">
+                        <img src="image/summer4.jpg" data-caption="Summer" alt="summer4" class="responsive-img materialboxed"/>
+                    </div>
+                    <div class="col s12 m4 hide-on-large-only">
+                        <img src="image/summer5.jpg" data-caption="Summer" alt="summer5" class="responsive-img materialboxed"/>
+                    </div>
+                    <div class="col s12 m4 show-on-large">
+                        <img src="image/summer6.jpg" data-caption="Summer" alt="summer6" class="responsive-img materialboxed"/>
+                    </div>
+                    <div class="col s12 m4 show-on-large">
+                        <img src="image/summer3.jpg" data-caption="Summer" alt="summer6" class="responsive-img materialboxed"/>
+                    </div>
+                    <div class="col s12 m4 show-on-large">
+                        <img src="image/summer2.jpg" data-caption="Summer" alt="summer6" class="responsive-img materialboxed"/>
+                    </div>
+                    
+            </div>
+    </div>
+<br><br><br>
+    <!--Slider Asychronous-->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+            <img src="image/summer4.jpg">
+            <div class="caption center-align">
+                <h3><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+            </div>
+            </li>
+            <li>
+            <img src="image/summer6.jpg">
+            <div class="caption left-align">
+                <h3><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                    <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+            </div>
+            </li>
+            <li>
+            <img src="image/summer3.jpg">
+            <div class="caption right-align">
+                <h3 class="red-text text-darken-3"><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                    <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+            </div>
+            </li>
+            <li>
+            <img src="image/summer5.jpg">
+            <div class="caption center-align">
+                <h3><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+            </div>
+            </li>
+            <li>
+                <img src="image/summer2.jpg">
+                <div class="caption right-align">
+                    <h3 class="red-text text-darken-3"><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                    <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+                </div>
+                </li>
+                <li>
+                <img src="image/summer1.jpg">
+                <div class="caption left-align">
+                    <h3><b>"Summer feels when my feet brought me at the beach!"</b></h3>
+                    <h5 class="black-text"><i>SUMMER is coming!</i></h5>
+                </div>
+                </li>
+        </ul>
+        </div>
+<br><br><br>
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox({
+            inDuration: 500,
+            outDuration: 300});
+        $('.slider').slider({
+            height: 450,
+            duration: 350,
+            indicators: true,
+            interval: 2000});
+    });
+    </script>
+</body>
+</html>
